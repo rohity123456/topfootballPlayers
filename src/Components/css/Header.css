@@ -1,0 +1,49 @@
+header {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.5rem 1rem;
+  align-items: center;
+  background-color: black;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.logoContainer {
+  display: flex;
+  height: 60px;
+}
+.logoContainer img {
+  object-fit: contain;
+  max-width: 50px;
+  margin-left: -1px;
+}
+.logoContainer div {
+  font-weight: 500;
+  background-color: #207d48;
+  height: 95%;
+  display: flex;
+  font-family: "Times New Roman", Times, serif;
+  align-items: center;
+  color: white;
+  padding: 0 0.5rem;
+}
+.logoContainer div span {
+  font-size: 2rem;
+}
+header nav {
+  display: flex;
+  background-color: #e8e8e8;
+  padding: 0.7rem;
+  border-radius: 40px;
+  justify-content: space-between;
+}
+.searchIcon {
+  color: darkgray;
+  margin-left: 5px;
+}
+header nav input {
+  border: none;
+  background: none;
+  outline: none;
+}

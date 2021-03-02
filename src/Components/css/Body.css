@@ -1,0 +1,13 @@
+.body {
+  padding: 1rem;
+}
+.body h1 {
+  margin-bottom: 1rem;
+  font-weight: 400;
+}
+.playerList {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  place-items: center;
+  gap: 0.6rem;
+}
