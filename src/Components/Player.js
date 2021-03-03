@@ -10,10 +10,11 @@ function Player(props) {
         0,
         nextMatchDateString.indexOf(" GMT")
       );
+      debugger;
       return (
         nextMatchDateString &&
         nextMatchTeam &&
-        `Next Match vs ${nextMatchDateString} at ${nextMatchDate}`
+        `Next Match vs ${nextMatchTeam} at ${nextMatchDateString}`
       );
     }
     return "";
