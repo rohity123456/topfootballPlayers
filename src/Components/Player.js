@@ -4,16 +4,19 @@ import "./css/Player.css";
 function Player(props) {
   const { skill, name, value, team, id, nextMatchTeam, nextMatchDate } = props;
   const getNextMatchString = () => {
-    let nextMatchDateString = new Date(nextMatchDate + " UTC").toString();
-    nextMatchDateString = nextMatchDateString.slice(
-      0,
-      nextMatchDateString.indexOf(" GMT")
-    );
-    return (
-      nextMatchDateString &&
-      nextMatchTeam &&
-      `Next Match vs ${nextMatchTeam} at ${nextMatchDate}`
-    );
+    if (nextMatchTeam && nextMatchDate) {
+      let nextMatchDateString = new Date(nextMatchDate + " UTC").toString();
+      nextMatchDateString = nextMatchDateString.slice(
+        0,
+        nextMatchDateString.indexOf(" GMT")
+      );
+      return (
+        nextMatchDateString &&
+        nextMatchTeam &&
+        `Next Match vs ${nextMatchDateString} at ${nextMatchDate}`
+      );
+    }
+    return "";
   };
   return (
     <div className="player">
